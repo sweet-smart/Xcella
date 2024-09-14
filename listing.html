@@ -34,6 +34,19 @@
         color: #ffffff; /* Ensuring the content is visible */
       }
 
+      /* Watermark */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+}
+
       /* Navbar Styling */
       .navbar {
         background-color: rgba(43, 9, 194, 0.85); /* Semi-transparent for better readability over the background */
@@ -141,6 +154,9 @@
       <img src="/images/Xclogo.jpg" alt="Xcella Realty Logo" />
       Xcella<span>Realty</span>
     </a>
+
+     <!-- Watermark -->
+  <div class="watermark">Excella Realty</div>
     <!-- Fix for the navbar toggler -->
     <button
       class="navbar-toggler"

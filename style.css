@@ -46,7 +46,18 @@ body::before {
   display: flex;
   align-items: center; /* Aligns logo and text vertically */
 }
-
+/* Watermark */
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  z-index: 1;
+  pointer-events: none;
+}
 /* Logo adjustments */
 .navbar-brand img {
   height: 25px; /* Reduce logo height */
