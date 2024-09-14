@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CDN CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style.css" />
+    <title>Xcella Realty</title>
+
+    <style>
+      tyle>
+      /* Add the background image */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: url('/mnt/data/deatl.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #ffffff; /* Ensuring the content is visible */
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        background-color: rgba(43, 9, 194, 0.85); /* Semi-transparent for better readability over the background */
+        border-bottom: 3px solid rgba(139, 58, 245, 0.9);
+        padding: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-family: "Protest Guerrilla", sans-serif;
+        font-size: 2rem;
+        color: #ffffff !important;
+        text-shadow: 2px 2px dodgerblue;
+      }
+
+      .nav-link {
+        color: #ffffff !important;
+        margin-right: 15px;
+      }
+
+      .nav-link:hover {
+        color: #ffcc00 !important;
+        text-shadow: 1px 1px #ffffff;
+      }
+
+      .navbar-toggler {
+        border-color: #8b3af5;
+      }
+
+      .navbar-toggler-icon {
+        background-color: #5c0cf1;
+      }
+
+      /* Container and Property Styling */
+      .container-fluid {
+        padding: 50px;
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for content area */
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+
+      .listing-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .property-card {
+        background-color: rgba(34, 20, 235, 0.9); /* Slightly transparent for readability */
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 300px;
+        margin-bottom: 20px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .property-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .property-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 15px;
+      }
+
+      .property-card p {
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      .property-card p strong {
+        color: #e91e63;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 991.98px) {
+        .navbar-nav {
+          text-align: center;
+        }
+        .listing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .property-card {
+          width: 100%; /* Make property cards full width on smaller screens */
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar section -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="/images/Xclogo.jpg" alt="Xcella Realty Logo" />
+      Xcella<span>Realty</span>
+    </a>
+    <!-- Fix for the navbar toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index.html">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html">
+            <i class="fas fa-info-circle"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services.html">
+            <i class="fas fa-cogs"></i> Services
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/listing.html">
+            <i class="fas fa-list"></i> Listing
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero section-->
+    <div class="container-fluid">
+      <div class="listing-container">
+        <!-- Property 1 -->
+        <div class="property-card">
+          <img
+            src="/miniimages/350mil.jpg"
+            alt="Newly Built 5Bedroom Detached Duplex"
+            class="img-fluid property-image"
+          />
+          <p>
+            For Sale: Newly Built 5Bedroom Detached Duplex with BQ at Magodo Gra
+            Phase II.<br />Price: 350 million<br />Title: C of O
+          </p>
+        </div>
+        <!-- Property 2 -->
+        <div class="property-card">
+          <img
+            src="/miniimages/550mil.jpg"
+            alt="Newly Built Spacious 5Bedroom Fully Detached Duplex"
+            class="img-fluid property-image"
+          />
+          <p>
+            For Sale: Newly Built Spacious 5bedroom Fully Detached Duplex with
+            Swimming Pool and 2bedroom flat BQ at Magodo GRA Phase II.<br />Price:
+            550 million<br />Title: C of O
+          </p>
+        </div>
+        <!-- Property 3 -->
+        <div class="property-card">
+          <img
+            src="/miniimages/350mil.jpg"
+            alt="Newly Built 5bedroom Semi-Detached Duplex"
+            class="img-fluid property-image"
+          />
+          <p>
+            For Sale: Newly Built 5bedroom Semi-Detached Duplex with BQ at
+            Magodo Gra Phase II.<br />Price: 300 million<br />Title: C of O
+          </p>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="property-card">
+          <img
+            src="/miniimages/350rmil.jpg"
+            alt="Newly Built Spacious 5Bedroom Fully Detached Duplex"
+            class="img-fluid property-image"
+          />
+          <p>
+            For Sale: Newly Built Spacious 5bedroom Fully Detached Duplex with
+            Swimming Pool and 2bedroom flat BQ at Magodo GRA Phase II.<br />Price:
+            550 million<br />Title: C of O
+          </p>
+        </div>
+        <!-- Repeat for remaining properties up to 18 -->
+        <!-- Add more property cards here following the same pattern -->
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
